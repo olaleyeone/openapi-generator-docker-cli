@@ -1,0 +1,4 @@
+FROM openjdk:8-alpine
+COPY openapi-generator-cli-5.1.1.jar ./
+
+ENTRYPOINT ["java", "-jar", "openapi-generator-cli-5.1.1.jar"]
