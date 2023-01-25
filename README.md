@@ -10,4 +10,4 @@
 `docker build . -f Dockerfile-5.1.1 -t openapi-generator-cli:5.1.1`
 
 ## Generate sdk
-`docker run --rm -v ${PWD}\out\:/out/ openapi-generator-cli generate -i http://host.docker.internal:${API_DOC_PATH} -g dart -o /out`
+`docker run --rm -v ${PWD}\out\:/out/ openapi-generator-cli generate -i http://host.docker.internal:${PORT}/${API_DOC_PATH} -g dart -o /out`
